@@ -13,7 +13,7 @@ class RacerService(
         racerRepository.save(
             RacerModel(
                 name = request.name,
-                points = request.points
+                points = request.points?: "0"
             )
         )
 
